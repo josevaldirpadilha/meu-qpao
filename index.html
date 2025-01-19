@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Qpão-Panificadora </title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index2.html">Home</a>
+            <a href="produtos2.html">Produtos</a>
+            <a href="sobre2.html">Sobre</a>
+            <a href="contato2.html">Contato</a>
+        </nav>
+        <div class="social-icons"> <div style="position: relative;" ><nav style="font-size: small;">
+            <a href="https://www.facebook.com/panificadora.qpao.9" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/pani.ficadoraqpao/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp">  </i>(42)999148397</a>
+        </div>  
+        
+    <h1></h1> 
+
+        <p>Delicias frescas todos os dias</p>
+    </header>
+    <style>
+       body {
+    width: auto;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    font-size: smaller;
+    background-image: url("img/pp.jpg");
+    color: #000000;
+    text-align: center;
+    padding: 1em 0;
+}
+nav {
+    background-color: #060507;
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    color: #ffffff;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 35%;
+    margin: auto;
+    overflow: hidden;
+}
+.slides {
+    display: none;
+    width: 100%;
+}
+.active {
+    display: block;
+}
+.video-container {
+    text-align: center;
+    margin: 2em 0;
+}
+footer {
+    background-color: #534743;
+    color: #fcfbfb;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+    </style>
+   
+    </nav>
+
+    <div class="slideshow-container">
+        <img src="./img/as c.jpg" class="slides active" alt="P�o Fresco">
+        <img src="./img/AS.jpg" class="slides" alt="Variedade de P�es">
+        <img src="./img/b.jpg" class="slides" alt="Doces e Salgados">
+        <img src="./img/images (1).jpg" class="slides" alt="Doces e Salgados">
+        <img src="./img/bb.jpg" class="slides" alt="Doces e Salgados">
+        <img src="./img/bbb.jpg" class="slides" alt="Doces e Salgados">
+        <img src="./img/bbbb.jpg" class="slides" alt="Doces e Salgados">
+        <img src="./img/bbf.jpg" class="slides" alt="Doces e Salgados">
+        <img src="./img/bo.jpg" class="slides" alt="Doces e Salgados">
+        <img src="./img/coca-cola-1-5-litros.png" class="slides" alt="Doces e Salgados">
+        <img src="./img/costela.jpg" class="slides" alt="Doces e Salgados">
+        <img src="./img/coxinha-de-frango.jpg" class="slides" alt="Doces e Salgados">
+        <img src="./img/DD.jpg" class="slides" alt="Doces e Salgados">
+        <img src="./img/FANTA G.jpg" class="slides" alt="Doces e Salgados">
+        <img src="./img/frango.jpg" class="slides" alt="Doces e Salgados">
+    </div>
+
+    <div class="video-container">
+        <h2>Veja outros produtos</h2>
+        <video controls>
+            <source src="/img/qpão.mp4" type="video/mp4">
+            Seu navegador nao suporta o elemento de video.
+        </video>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Qpão-Panificadora  - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+      let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].classList.add("active");
+    setTimeout(showSlides, 2000); // Muda a imagem a cada 2 segundos
+}
+    </script>
+</body>
+</html>
